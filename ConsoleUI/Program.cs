@@ -51,7 +51,9 @@ namespace ConsoleUI
             /*
             * Add the 4 vehicles to the list
             * Using a foreach loop iterate over each of the properties
-            */
+            */ 
+            // Call each of the drive methods for one car and one motorcycle
+
 
             vehicles.Add(focus);
             vehicles.Add(motorcycle);
@@ -60,14 +62,13 @@ namespace ConsoleUI
 
             foreach (var veh in vehicles)
             {
-                Console.WriteLine($"Make {veh.Make}  Model {veh.Model}  Year  {veh.Year}.");
+                Console.WriteLine($"Make: {veh.Make},  \nModel: {veh.Model},  \nYear  {veh.Year}.");
                 veh.DriveAbstract();
-                Console.WriteLine("***********************\n");
+                Console.WriteLine(""----------------"");
+                Console.WriteLine("**********************************************************\n");
             }
 
-            // Call each of the drive methods for one car and one motorcycle
-
-            #endregion
+           #endregion
             Console.ReadLine();
         }
     }

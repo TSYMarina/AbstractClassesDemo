@@ -9,12 +9,12 @@ namespace ConsoleUI
         public bool HasSideCart { get; set; } = false;
         public override void DriveAbstract()
         {
-            Console.WriteLine("Implemented Abstract Drive method for Motorcycle.");
+            Console.WriteLine("Implemented Abstract Drive method for Motorcycle.\n");
         }
 
         public override void DriveVirtual()
         {
-            Console.WriteLine("Virtial Method for Motorcycle has been overridden.");
+            Console.WriteLine("Virtial Method for Motorcycle has been overridden.\n");
         }
 
     }
